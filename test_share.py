@@ -7,9 +7,6 @@ url = "https://drive.google.com/uc?export=download&id=1FfVRXnEIwcjssh-56DJWPJNZd
 
 site_url = requests.get(url).text.strip()
 
-enableXsrfProtection = False
-enableCORS = False
-
 st.set_page_config(
     layout="wide"
 )
@@ -22,6 +19,7 @@ st.components.v1.iframe(site_url,height=2000,scrolling=True)
 #response = requests.get(url)
 #text = response.text
 #st.write(text)
+
 
 
 
